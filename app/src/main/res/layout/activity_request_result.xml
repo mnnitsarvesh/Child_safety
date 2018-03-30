@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.child.RequestResult"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/requestResultToolbar"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/image"
+            android:layout_marginTop="10dp"
+            android:id="@+id/requestResultImageView"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="userName"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/requestResultName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="android@gmail.com"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/requestResultEmail"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="accept Request"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:id="@+id/acceptRequest"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/declineRequest"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:text="decline Request"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>
